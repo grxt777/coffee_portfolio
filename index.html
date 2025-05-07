@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee House - Уютная кофейня</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">Coffee House</div>
+            <ul class="nav-links">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#menu">Меню</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+    
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Добро пожаловать в Coffee House</h1>
+            <p>Место, где каждый глоток кофе - это история</p>
+            <a href="#menu" class="cta-button">Наше меню</a>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <h2>Наше меню</h2>
+        <div class="menu-categories">
+            <button class="category-btn active" data-category="coffee">Кофе</button>
+            <button class="category-btn" data-category="tea">Чай</button>
+            <button class="category-btn" data-category="desserts">Десерты</button>
+        </div>
+        <div class="menu-grid">
+            <!-- Кофе -->
+            <div class="menu-item" data-category="coffee">
+                <img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Эспрессо">
+                <h3>Эспрессо</h3>
+                <p>Крепкий и насыщенный вкус</p>
+                <span class="price">150 ₽</span>
+            </div>
+            <div class="menu-item" data-category="coffee">
+                <img src="https://sun9-58.userapi.com/impg/dYkrh_rLM5zIz-MiQk861JsADzlyXoA0PxMf3A/Q4mIPcjBNGE.jpg?size=540x540&quality=96&sign=5acb385a5d48273eb0dee7be7886d4eb&type=album" alt="Латте">
+                <h3>Латте</h3>
+                <p>Нежный кофе с молочной пенкой</p>
+                <span class="price">250 ₽</span>
+            </div>
+            <div class="menu-item" data-category="coffee">
+                <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Капучино">
+                <h3>Капучино</h3>
+                <p>Идеальный баланс кофе и молока</p>
+                <span class="price">230 ₽</span>
+            </div>
+            <div class="menu-item" data-category="coffee">
+                <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Раф">
+                <h3>Раф кофе</h3>
+                <p>Сливочный кофе с ванилью</p>
+                <span class="price">280 ₽</span>
+            </div>
+            <div class="menu-item" data-category="coffee">
+                <img src="https://images.unsplash.com/photo-1551030173-122aabc4489c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Американо">
+                <h3>Американо</h3>
+                <p>Классический черный кофе</p>
+                <span class="price">180 ₽</span>
+            </div>
+            <div class="menu-item" data-category="coffee">
+                <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Флэт Уайт">
+                <h3>Флэт Уайт</h3>
+                <p>Двойной эспрессо с молоком</p>
+                <span class="price">270 ₽</span>
+            </div>
+
+            <!-- Чай -->
+            <div class="menu-item" data-category="tea">
+                <img src="https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Черный чай">
+                <h3>Черный чай</h3>
+                <p>Крепкий классический чай</p>
+                <span class="price">150 ₽</span>
+            </div>
+            <div class="menu-item" data-category="tea">
+                <img src="https://images.unsplash.com/photo-1627435601361-ec25f5b1d0e5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Зеленый чай">
+                <h3>Зеленый чай</h3>
+                <p>Свежий и ароматный</p>
+                <span class="price">150 ₽</span>
+            </div>
+            <div class="menu-item" data-category="tea">
+                <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Чай с бергамотом">
+                <h3>Чай с бергамотом</h3>
+                <p>Эрл Грей с цитрусовыми нотками</p>
+                <span class="price">170 ₽</span>
+            </div>
+            <div class="menu-item" data-category="tea">
+                <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Чай с мятой">
+                <h3>Чай с мятой</h3>
+                <p>Освежающий мятный чай</p>
+                <span class="price">180 ₽</span>
+            </div>
+
+            <!-- Десерты -->
+            <div class="menu-item" data-category="desserts">
+                <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Тирамису">
+                <h3>Тирамису</h3>
+                <p>Классический итальянский десерт</p>
+                <span class="price">320 ₽</span>
+            </div>
+            <div class="menu-item" data-category="desserts">
+                <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Чизкейк">
+                <h3>Чизкейк</h3>
+                <p>Нежный творожный десерт</p>
+                <span class="price">290 ₽</span>
+            </div>
+            <div class="menu-item" data-category="desserts">
+                <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Круассан">
+                <h3>Круассан</h3>
+                <p>Слоеная выпечка с шоколадом</p>
+                <span class="price">180 ₽</span>
+            </div>
+            <div class="menu-item" data-category="desserts">
+                <img src="https://images.unsplash.com/photo-1569864358642-9d1684040f43?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Макарон">
+                <h3>Макарон</h3>
+                <p>Французское миндальное печенье</p>
+                <span class="price">150 ₽</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <h2>О нас</h2>
+            <p>Мы создаем особую атмосферу, где каждый может насладиться отличным кофе и приятной компанией. Наши бариста - настоящие профессионалы, которые знают все о кофе.</p>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Галерея</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Интерьер">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Кофе">
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Десерты">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Контакты</h2>
+        <div class="contact-info">
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>ул. Кофейная, 1</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <p>+7 (999) 123-45-67</p>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-clock"></i>
+                <p>Ежедневно 8:00 - 22:00</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="social-links">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-vk"></i></a>
+        </div>
+        <p>&copy; 2024 Coffee House. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
